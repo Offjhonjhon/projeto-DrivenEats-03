@@ -137,6 +137,14 @@ function cancelarPedido(){
     document.querySelector(".tela-finalizacao").style.display = "none";
 }
 
+function enviarMensagem(){
+    let name = prompt("Qual seu nome?");
+    let adress = prompt("Qual seu endereço?");
+    let cellNumber = +5586999365216;
+    let mensagem = "Olá, gostaria de fazer o pedido: \n- Prato: " + comida + "\n- Bebida: " + bebida + "\n- Sobremesa: " + sobremesa + "\nTotal: " + (valorComida + valorBebida + valorSobremesa).toLocaleString('pt-BR', { style:'currency', currency: 'BRL'}) + "\n\nNome: " + name + "\nEndereço: " + adress;
+    mensagem = encodeURIComponent(mensagem);
+    window.open("https://wa.me/" + cellNumber + "?text=" + mensagem);
+}
 
 
 
