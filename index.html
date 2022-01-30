@@ -30,103 +30,133 @@
     <main>
 
         <h1>Primeiro, seu prato</h1>
-        <div class="pratos">
-            <div class="prato">
+        <div class="pratos"  data-identifier="dishes">
+            <div id="comida1"  class="prato" data-identifier="food-option" onclick="selecionarComida1()" >
                 <figure>
-                    <img src="imgs/frango_yin_yang 1.png" alt="Frango Yin Yang">
+                    <img src="imgs/penne_puttanesca3.jpg" alt="Frango Yin Yang" >
                 </figure>
-                <p>Frango Yin Yang</p>
-                <p>Um pouco de batata, um pouco de salada</p>
-                <p>R$ 14,90</p>
+                <p data-identifier="food-title">Macarronada </p>
+                <p>Macarrão penne com molho apimentado</p>
+                <p data-identifier="food-price">R$ 25,00</p>
+                <img id="confirm1" class="confirm" src="imgs/confirma.svg" alt="simbolo confirma">
             </div>
 
-            <div class="prato">
+            <div id="comida2" class="prato" data-identifier="food-option" onclick="selecionarComida2()">
                 <figure>
-                    <img src="imgs/frango_yin_yang 1.png" alt="Frango Yin Yang">
+                    <img src="imgs/pizza.jpg" alt="Frango Yin Yang">
                 </figure>
-                <p>Frango Yin Yang</p>
-                <p>Um pouco de batata, um pouco de salada</p>
-                <p>R$ 14,90</p>
+                <p data-identifier="food-title">Pizza Italiana</p>
+                <p>Massa crocante com recheio especial</p>
+                <p data-identifier="food-price">R$ 45,00</p>
+                <img id="confirm2" class="confirm" src="imgs/confirma.svg" alt="simbolo confirma">
             </div>
 
-            <div class="prato">
+            <div id="comida3" class="prato" data-identifier="food-option" onclick="selecionarComida3()">
                 <figure>
-                    <img src="imgs/frango_yin_yang 1.png" alt="Frango Yin Yang">
+                    <img src="imgs/canelone.jpg" alt="Frango Yin Yang">
                 </figure>
-                <p>Frango Yin Yang</p>
-                <p>Um pouco de batata, um pouco de salada</p>
-                <p>R$ 14,90</p>
+                <p data-identifier="food-title">Canelone</p>
+                <p>Recheio de carne e queijo</p>
+                <p data-identifier="food-price">R$ 30,00</p>
+                <img id="confirm3" class="confirm" src="imgs/confirma.svg" alt="simbolo confirma">
             </div>
         </div>
 
         <h1>Agora, sua bebida</h1>
-        <div class="bebidas">
-            <div class="bebida">
+        <div class="bebidas" data-identifier="drinks">
+            <div id="bebida1" class="bebida" data-identifier="food-option" onclick="selecionarBebida1()">
                 <figure>
-                    <img src="imgs/coquinha_gelada 1.png" alt="coquinha_gelada">
+                    <img src="imgs/drinks.jpeg" alt="coquinha_gelada">
                 </figure>
-                <p>Coquinha gelada</p>
-                <p>Lata 350ml</p>
-                <p>R$ 4,90</p>
+                <p data-identifier="food-title">Drinks</p>
+                <p>Caipirocas</p>
+                <p data-identifier="food-price">R$ 12,00</p>
+                <img id="confirm4" class="confirm" src="imgs/confirma.svg" alt="simbolo confirma">
             </div>
 
-            <div class="bebida">
+            <div id="bebida2" class="bebida" data-identifier="food-option" onclick="selecionarBebida2()">
                 <figure>
-                    <img src="imgs/coquinha_gelada 1.png" alt="coquinha_gelada">
+                    <img src="imgs/sucos.jpeg" alt="coquinha_gelada">
                 </figure>
-                <p>Coquinha gelada</p>
-                <p>Lata 350ml</p>
-                <p>R$ 4,90</p>
+                <p data-identifier="food-title">Sucos naturais</p>
+                <p>Abacaxi, acerola, tamarindo e guaraná</p>
+                <p data-identifier="food-price">R$ 7,00</p>
+                <img id="confirm5" class="confirm" src="imgs/confirma.svg" alt="simbolo confirma">
             </div>
 
-            <div class="bebida">
+            <div id="bebida3" class="bebida" data-identifier="food-option" onclick="selecionarBebida3()">
                 <figure>
-                    <img src="imgs/coquinha_gelada 1.png" alt="coquinha_gelada">
+                    <img src="imgs/refris.jpeg" alt="coquinha_gelada">
                 </figure>
-                <p>Coquinha gelada</p>
-                <p>Lata 350ml</p>
-                <p>R$ 4,90</p>
+                <p data-identifier="food-title">Coca-Cola</p>
+                <p>350ml</p>
+                <p data-identifier="food-price">R$ 4,90</p>
+                <img id="confirm6" class="confirm" src="imgs/confirma.svg" alt="simbolo confirma">
             </div>
         </div>
         
         <h1>Por fim, sua sobremesa</h1>
-        <div class="sobremesas">
-            <div class="sobremesa">
+        <div class="sobremesas" data-identifier="desserts">
+            <div id="sobremesa1" class="sobremesa" data-identifier="food-option" onclick="selecionarSobremesa1()">
                 <figure>
-                    <img src="imgs/pudim 1.png" alt="">
+                    <img src="imgs/frutilla.jpeg" alt="">
                 </figure>
-                <p>Pudim</p>
-                <p>Apenas pudim</p>
-                <p>R$ 7,90</p>
+                <p data-identifier="food-title">Torta de Frutilla</p>
+                <p>Com creme de chantily</p>
+                <p data-identifier="food-price">R$ 9,00</p>
+                <img id="confirm7" class="confirm" src="imgs/confirma.svg" alt="simbolo confirma">
             </div>
 
-            <div class="sobremesa">
+            <div id="sobremesa2" class="sobremesa" data-identifier="food-option" onclick="selecionarSobremesa2()">
                 <figure>
-                    <img src="imgs/pudim 1.png" alt="">
+                    <img src="imgs/brownie.jpeg" alt="">
                 </figure>
-                <p>Pudim</p>
-                <p>Apenas pudim</p>
-                <p>R$ 7,90</p>
+                <p data-identifier="food-title">Brownie caliente</p>
+                <p>Brownie com sorverte de baunilha</p>
+                <p data-identifier="food-price">R$ 15,00</p>
+                <img id="confirm8" class="confirm" src="imgs/confirma.svg" alt="simbolo confirma">
             </div>
 
-            <div class="sobremesa">
+            <div id="sobremesa3" class="sobremesa" data-identifier="food-option" onclick="selecionarSobremesa3()">
                 <figure>
-                    <img src="imgs/pudim 1.png" alt="">
+                    <img src="imgs/limao.jpeg" alt="">
                 </figure>
-                <p>Pudim</p>
-                <p>Apenas pudim</p>
-                <p>R$ 7,90</p>
+                <p data-identifier="food-title">Torta de limão</p>
+                <p>Torta de limão com cobertura flanbada</p>
+                <p data-identifier="food-price">R$ 9,00</p>
+                <img id="confirm9" class="confirm" src="imgs/confirma.svg" alt="simbolo confirma">
             </div>
         </div>
+
     </main>
+    <div class="tela-finalizacao">
+        <div class="bloco-finalizacao">
+            <p >Confirme seu pedido</p>
+            <p class="food"></p>
+            <p class="drink"></p>
+            <p class="dessert"></p>
+            <p class="valor-food"></p>
+            <p class="valor-drink"></p>
+            <p class="valor-dessert"></p>
+            <p>TOTAL</p>
+            <p class="valor-total"></p>
+            <button>Tudo certo, pode pedir!</button>
+            <button onclick="cancelarPedido()">Cancelar</button>
+        </div>
+    </div>
 
     <footer>
-        <div>
+        <div class="finalizar_div">
         </div>
-        <p>Selecione os 3 itens para fechar o pedido</p>
+        <p class="finalizar" >Selecione os 3 itens para fechar o pedido</p>
+        <button class="finalizar-botao" onclick="fecharPedido()">
+        <p>Fechar pedido</p>
+        </button>
     </footer>
-    
-    
+
+    <script src="script.js" >
+        
+    </script>
 
 </body>
 
