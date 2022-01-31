@@ -115,28 +115,32 @@ function selecionarSobremesa3(){
     verificacao();
 }
 
+// Verifica se a opção já foi selecionada
 function verificacao(){
     if((comida !== "") && (bebida !== "") && (sobremesa !== "")){
         document.querySelector(".finalizar-botao").style.display = "block";
     }
 }
 
+// Faz a finalização do pedido e ajusta as informações da tela
 function fecharPedido(){
     valorTotal = valorComida + valorBebida + valorSobremesa;
     document.querySelector(".tela-finalizacao").style.display = "block"
     document.querySelector(".food").innerHTML = comida;
     document.querySelector(".drink").innerHTML = bebida;
     document.querySelector(".dessert").innerHTML = sobremesa;
-    document.querySelector(".valor-food").innerHTML = valorComida.toFixed(2);
-    document.querySelector(".valor-drink").innerHTML = valorBebida.toFixed(2);
-    document.querySelector(".valor-dessert").innerHTML = valorSobremesa.toFixed(2);
+    document.querySelector(".valor-food").innerHTML = valorComida.toFixed(2).toString().replace('.', ',');
+    document.querySelector(".valor-drink").innerHTML = valorBebida.toFixed(2).toString().replace('.', ',');
+    document.querySelector(".valor-dessert").innerHTML = valorSobremesa.toFixed(2).toString().replace('.', ',');
     document.querySelector(".valor-total").innerHTML = (valorComida + valorBebida + valorSobremesa).toLocaleString('pt-BR', { style:'currency', currency: 'BRL'});
 }
 
+// Botão de cancelar
 function cancelarPedido(){
     document.querySelector(".tela-finalizacao").style.display = "none";
 }
 
+// Envia a mensagem via whatsapp
 function enviarMensagem(){
     let name = prompt("Qual seu nome?");
     let adress = prompt("Qual seu endereço?");

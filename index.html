@@ -29,6 +29,7 @@
     <!-- informações principais da pagina -->
     <main>
 
+        <!-- Selecao de comidas -->
         <h1>Primeiro, seu prato</h1>
         <div class="pratos"  data-identifier="dishes">
             <div id="comida1"  class="prato" data-identifier="food-option" onclick="selecionarComida1()" >
@@ -62,6 +63,7 @@
             </div>
         </div>
 
+        <!-- Seleção de Bebidas -->
         <h1>Agora, sua bebida</h1>
         <div class="bebidas" data-identifier="drinks">
             <div id="bebida1" class="bebida" data-identifier="food-option" onclick="selecionarBebida1()">
@@ -95,6 +97,7 @@
             </div>
         </div>
         
+        <!-- Seleção de Sobremesas -->
         <h1>Por fim, sua sobremesa</h1>
         <div class="sobremesas" data-identifier="desserts">
             <div id="sobremesa1" class="sobremesa" data-identifier="food-option" onclick="selecionarSobremesa1()">
@@ -129,8 +132,10 @@
         </div>
 
     </main>
+
+    <!-- Tela de confirmação  -->
     <div class="tela-finalizacao">
-        <div class="bloco-finalizacao">
+        <div class="bloco-finalizacao" data-identifier="confirmation-dialog">
             <p >Confirme seu pedido</p>
             <p class="food"></p>
             <p class="drink"></p>
@@ -145,6 +150,7 @@
         </div>
     </div>
 
+    <!-- Rodapé -->
     <footer>
         <div class="finalizar_div">
         </div>
